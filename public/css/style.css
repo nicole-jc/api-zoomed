@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-famiy: "Poppins", sans-serif;
+  --color1: #42b6cd;
+  --font-black: #1b1b1b;
+  --box-shadow: 0 1px 1px rgb(0 0 0 / 0.1);
+  --border: 2px solid #dddfe2;
+  --gray: #2d2f3e;
+  --white: #f4f6f8;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-famiy);
+  background: #f4f6f8;
+  color: var(--font-family);
+}
+
+header {
+  background: #42b6cd;
+  color: white;
+  padding: 0 15px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: rgba(255 255 255 / 0.2);
+  outline: none;
+}
+
+form.search-form {
+  position: relative;
+}
+
+input[type="search"] {
+  padding: 7px 30px 7px 12px;
+  border-radius: 6px;
+  border: none;
+  color: #454548;
+  font-size: 1rem;
+  width: 300px;
+  transition: width 0.35s ease;
+  font-family: var(--font-famiy);
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+}
+
+input[type="search"]:focus {
+  width: 330px;
+  outline: none;
+}
+
+form.search-form::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: url("data:image/svg+xml;utf8,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z'/%3E%3C/svg%3E")
+    no-repeat center center;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  nav {
+    gap: 15px;
+  }
+  input[type="search"] {
+    width: 120px;
+  }
+  input[type="search"]:focus {
+    width: 180px;
+  }
+}
+
+.button {
+  background-color: #2d2f3e;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  font-family: var(--font-famiy);
+  color: var(--white);
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.main {
+  top: 160px;
+  display: flex;
+  gap: 10px;
+  position: fixed;
+  top: 250px;
+  left: 4%;
+}
+
+div.gallery {
+  margin: 20px;
+  float: left;
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #7ccfdf;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+div.desc {
+  padding: 15px;
+  color: var(--font-color02);
+  background-color: #ecf3fa;
+  border: var(--border);
+  width: 80%;
+  border-radius: 6px;
+}
+
+.paragraph {
+  color: var(--font-color02);
+}
+
+.span {
+  color: var(--color03);
+}
+
+.icon-icons {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-size: 42px !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link_ {
+  text-decoration: none;
+  color: var(--color1);
+  transition: 0.3s ease;
+}
+
+.link_:hover {
+  opacity: 0.8;
+}
+
+.container {
+  margin-top: 0;
+  margin-left: 440px;
+  background: white;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h4 {
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  width: 90%;
+
+  padding: 11px 14px;
+
+  border: var(--border);
+
+  border-radius: 6px;
+
+  font-size: 1rem;
+
+  transition: 0.3s ease;
+
+  font-family: var(--font-family);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
+  border: 2px solid var(--color1);
+}
+
+select {
+  width: 95%;
+}
+
+.button_group {
+  flex-direction: column;
+  max-width: 100%;
+  margin: 1rem auto;
+
+}
+
+.button_form {
+  background-color: var(--color1);
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 12px;
+  width: 120px;
+  box-shadow: var(--box-shadow);
+}
+
+.button_form.delete {
+  background-color: #dc3545;
+
+  }
+
+.button_form:hover {
+  opacity: 0.8;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  width: 1300px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #42b6cd;
+  color: white;
+}
+
+thead th {
+  padding: 12px 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fafdff;
+}
+
+tbody tr:hover {
+  background-color: #e7fbff;
+}
+
+tbody td {
+  padding: 12px 20px;
+}
+
+.button_table {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: var(--font-black);
+  color: var(--white);
+  font-family: var(--font-family);
+  transition: 0.3s ease;
+}
+
+.button_table:hover {
+
+  opacity: 0.8;
+}
