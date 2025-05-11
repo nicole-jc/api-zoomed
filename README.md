@@ -13,6 +13,8 @@ API REST feita com **Laravel 12.x**, **PHP 8.2.12**, **MySQL (via XAMPP)**, com 
 Permite cadastro, listagem, edição e exclusão de animais e cuidados.  
 O foco foi entregar um sistema funcional e coerente com o que eu domino atualmente.
 
+OBS: Os exemplos da interface estao disponiveis em: /exemplos 
+
 ## Tecnologias utilizadas
 
 - Laravel 12
